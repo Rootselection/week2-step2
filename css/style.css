@@ -221,8 +221,16 @@ html{
     color: #242121;
     padding-top: 30px;
   }
+.benefits__graphic {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
   .benefits__graphic-first-line {
     display: flex;
+  }
+  .benefits__graphic__item .benefits__graphic-first-line {
+    background-color: #fff;
   }
   .benefits__graphic__item {
     margin-bottom: 10px;
@@ -237,6 +245,12 @@ html{
  .benefits__graphic-img {
    height: 15px;
  }
+
+ .benefits__graphic-img {
+  height: 15px;
+}
+
+
   /* .benefits__graphic__item span::before {
     content: url('../images/graphic-line.svg');
     margin-top: 5px;
@@ -328,6 +342,11 @@ html{
   border: 1px solid #C4C4C4;
   letter-spacing: 0.6px;
   padding: 24px 92px;
+  transition: all .2s ease;
+}
+.gallery__add:hover {
+  background-color: #00B2A0;
+  color: #fff;
 }
 .blockquote {
   background-color: #F8F8F8;
@@ -367,6 +386,15 @@ html{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.gallery__video-icon svg {
+  fill: #373A39;
+  transition: all .4s ease;
+}
+.gallery__video-icon svg:hover {
+  transform: rotate(360deg) scale(1.1);
+  fill: #fff;
+  /* transform: translate(0, 0); */
 }
 .gallery__numbers {
   display: flex;
